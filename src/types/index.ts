@@ -1,15 +1,22 @@
-export type StoredFile = {
+export interface StoredFile {
   id: string;
   name: string;
   url: string;
-};
+}
 
-export type CartItem = {
+export interface CartItem {
   productId: number;
   quantity: number;
   price: number;
-};
+}
 
-export type ProductsPageProps = {};
+export interface CarouselProps {
+  id: string;
+  href: string;
+  title: string;
+  imageUrl: string;
+}
 
-export type ProductsCardProps = {};
+export interface ProductsPageProps {}
+
+export interface ProductsCardProps {}
